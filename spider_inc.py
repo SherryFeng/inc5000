@@ -7,11 +7,11 @@ import sys
 result = open("test.txt", 'w')
 sys.stdout = result
 
-r = requests.get('https://www.inc.com/inc5000list/json/inc5000_2017.json')
+r = requests.get('https://www.inc.com/inc5000list/json/inc5000_2018.json')
 
 company_list = json.loads(r.text)
 company_id_list = []
-company_base_url = 'https://www.inc.com/rest/inc5000company/inc5000-usa-2017/'
+company_base_url = 'https://www.inc.com/rest/inc5000company/inc5000-usa-2018/'
 
 
 for company in company_list:
